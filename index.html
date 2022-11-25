@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,37 +17,40 @@
 </head>
 <body>
     <div class="cat">
-        <img id ="face">
+        <img id="face" alt="Minecraft Head">
         <span style="align-items:center;"><h1 class="author">Tim Games</h1></span>
-        <h2 class="skills">Developer / Youtuber / Simp</h2>
+        <h2 class="skills">Developer / Youtuber / Editor</h2>
         <div style="margin-top:30px;">
             <div class="socials">  
                 <h1 class="title">Youtube</h1>
                 <a style="text-decoration:none;" href="https://www.youtube.com/@TimGames21" target="_blank"><h1 id="youtube" class="link">IgnCat</h1></a>
             </div>
             <div class="socials">  
-                <h1 class="title">Minecraft</h1>
-                <a style="text-decoration:none;" target="_blank"><h1 id="username" class="link">Username</h1></a>
-            </div>        
-            <div class="socials">  
                 <h1 class="title">Discord</h1>
-                <a style="text-decoration:none;" href="https://discord.gg/BvtD4rgZ2V" target="_blank"><h1 id="youtube" class="link">dcusername</h1></a>
-            </div>    
+                <a style="text-decoration:none;" href="https://discord.gg/BvtD4rgZ2V" target="_blank"><h1 id="dcUsername" class="link">dcusername</h1></a>
+            </div>
+            <div class="socials">  
+                <h1 class="title">Minecraft</h1>
+                <a style="text-decoration:none;" href="https://namemc.com/profile/TimGames21" target="_blank"><h1 id="username" class="link">Username</h1></a>
+            </div>            
         </div>
-        <h1 style="font-size:15px;color: #3d3258;">Made with <i style="color:red;" class="fa-solid fa-heart"></i> by</i> <a style="color:#ff0000;background: url(https://static.cracked.to/images/bg1.gif)">Tim / Cat</a> & <a href="https://leaked.wiki/api" target="_blank" style="text-decoration:none;color:#00ff00;">Leaked.Wiki API</a></i></h1>
-</body>
-
+        <h1 style="font-size:15px;color: #3d3258;">Made </i> by <a style="color:#ff0000;background: url(https://static.cracked.to/images/bg1.gif)">Tim</a> & <a href="https://leaked.wiki/api" target="_blank" style="text-decoration:none;color:#00ff00;">Leaked.Wiki API</a></h1> <!--with <i style="color:red;" class="fa-solid fa-heart">-->
+	</div>
 <script>
     $.getJSON('https://api.leaked.wiki/mcuser?username=TimGames21',  
-    function(data){
-    document.getElementById("face").src = data.face;
-    document.getElementById("username").innerHTML = data.username
-    }
-    )
-</script>
+	    function(data){
+		    document.getElementById("face").src = data.face;
+		    document.getElementById("username").innerText = data.username
+	    }
+    );
 
-<script>
-    $.getJSON('')
+    $.getJSON('https://api.leaked.wiki/discorduser?id=718536341918449715',
+	    function(data){
+		    // #avatar doesn't exist | document.getElementById('avatar').src = data.avatar;
+		    document.getElementById("dcUsername").innerText = data.username + "#" + data.discriminator
+            document.getElementById('avatar').src = data.avatar;
+        }
+    );
 </script>
-
+</body>
 </html>

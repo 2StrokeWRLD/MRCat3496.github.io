@@ -18,7 +18,7 @@ body {
 
 .cat :is(img) {
     box-shadow: 5px 5px 5px #1f1830;
-    border-radius: 5cm;
+    border-radius: 5px;
 }
 
 .author {
