@@ -27,11 +27,11 @@
             </div>
             <div class="socials">  
                 <h1 class="title">Discord</h1>
-                <a style="text-decoration:none;" href="https://discord.gg/BvtD4rgZ2V" target="_blank"><h1 id="dcUsername" class="link">dcusername</h1></a>
+                <a style="text-decoration:none;" href="https://discord.gg/BvtD4rgZ2V" target="_blank"><h1 id="username" class="link">username#tag</h1></a>
             </div>
             <div class="socials">  
                 <h1 class="title">Minecraft</h1>
-                <a style="text-decoration:none;" href="https://namemc.com/profile/TimGames21" target="_blank"><h1 id="username" class="link">Username</h1></a>
+                <a style="text-decoration:none;" href="https://namemc.com/profile/TimGames21" target="_blank"><h1 id="usernamemc" class="link">TimGames21</h1></a>
             </div>     
             <div class="socials">  
                 <h1 class="title">Reddit</h1>
@@ -45,17 +45,10 @@
         </div>
         
 <script>
-    $.getJSON('https://api.leaked.wiki/mcuser?username=TimGames21',  
-	    function(data){
-		    document.getElementById("face").src = data.face;
-		    document.getElementById("username").innerText = data.username
-	    }
-    );
-
     $.getJSON('https://api.leaked.wiki/discorduser?id=718536341918449715',
-	    function(data){ // #avatar doesn't exist |
-		    document.getElementById('avatar').src = data.avatar;
-		    document.getElementById("dcUsername").innerText = data.username + "#" + data.discriminator
+	    function(data){ // #avatar doesn't exist | document.getElementById('avatar').src = data.avatar;
+		    
+		    document.getElementById("username").innerText = data.username + "#" + data.discriminator
             document.getElementById('avatar').src = data.avatar;
         }
     );
