@@ -4,12 +4,6 @@
 
 }
 
-header{
-    width: 1920px;
-    height: 46px;
-    background-color: white;
-}
-
 a{
     text-decoration: none;
     color: red;
@@ -33,8 +27,6 @@ body {
     width: fit-content;
     padding: 45px;
     margin: auto;
-    float: left;
-    margin-left: 15px;
     background-color: #1c162b;
     margin-top: 5%;
     box-shadow: 5px 5px 5px #1f1830;

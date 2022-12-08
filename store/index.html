@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tim Games - Store</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dd13dde450.js" crossorigin="anonymous"></script>
     <!-- Stuff -->
@@ -15,21 +15,18 @@
     <script src="https://kit.fontawesome.com/dd13dde450.js" crossorigin="anonymous"></script>
     <!--  -->
 </head>
-<header>
-    <a href="https://mrcat3496.github.io">Home</a>
-    <a href="#">Store</a>
-    <a href="#">Discord Server</a>
-    <a href="#">About me</a>
-</header>
 <body>
-    <div class="cat">   
-        <img src="/img/Codeware.png" alt="Codeware Logo">
-        <span style="align-items:center;"><h1 class="author">Tim Games - Store</h1></span>
-        <h2 class="skills">Codeware / SureFire</h2>
+    <div class="cat">
+        <img id="face" alt="Minecraft Head">
+        <span style="align-items:center;"><h1 class="author">Tim Joey</h1></span>
+        <h2 class="skills">Developer / Youtuber / Editor</h2>
         <div style="margin-top:30px;">
             <div class="socials">  
-                <h1 class="title">Monaco Editor</h1>
+                <h1 class="title">Youtube</h1>
                 <a style="text-decoration:none;" href="https://www.youtube.com/@TimGames21" target="_blank"><h1 id="youtube" class="link">Cat</h1></a>
+                <div>
+                    <img class="imgs"  src="/img/Codeware.png" style="padding-top: 10px ;">
+                </div>
             </div>
             <div class="socials">  
                 <h1 class="title">Discord</h1>
@@ -43,37 +40,16 @@
                 <h1 class="title">Reddit</h1>
                 <a style="text-decoration:none;" href="https://www.reddit.com/user/MRCat3496" target="_blank"><h1 class="link">u/MRCat3496</h1></a>
             </div>        
+            <div class="socials">  
+                <h1 class="title">Store</h1>
+                <a style="text-decoration:none;" href="/store" target="_blank"><h1 class="link">Store And Downloads</h1></a>
+            </div> 
         </div>
         <h1 style="font-size:15px;color: #3d3258;">Made </i> by <a style="color:#ff0000;background: url(https://static.cracked.to/images/bg1.gif)">Tim</a> & <a href="https://leaked.wiki/api" target="_blank" style="text-decoration:none;color:#00ff00;">Leaked.Wiki API</a></h1> <!--with <i style="color:red;" class="fa-solid fa-heart">-->
             <h1 style="font-size:15px;color: #3d3258;"> <a href="https://leaked.wiki/p/TtXDXddEwY" target="_blank" style="text-decoration:none;color:#dde021;">Faq</a></h1>
-        </div>
 
-        <div class="cat">   
-            
-            <img src="/img/SureFire.png" alt="Codeware Logo">
-        <span style="align-items:center;"><h1 class="author">SureFire</h1></span>
-        <h2 class="skills">Made By xlsimridalx#0635</h2>
-        <div style="margin-top:30px;">
-            <div class="socials">  
-                <h1 class="title">Avalon Edit</h1>
-                <a style="text-decoration:none;" href="https://www.youtube.com/@TimGames21" target="_blank"><h1 id="youtube" class="link">Cat</h1></a>
-            </div>
-            <div class="socials">  
-                <h1 class="title">Fast Execution</h1>
-                <a style="text-decoration:none;" href="https://discord.gg/BvtD4rgZ2V" target="_blank"><h1 id="dcUsername" class="link">dcusername</h1></a>
-            </div>
-            <div class="socials">  
-                <h1 class="title"></h1>
-                <a style="text-decoration:none;" href="https://namemc.com/profile/TimGames21" target="_blank"><h1 id="username" class="link">Username</h1></a>
-            </div>     
-            <div class="socials">  
-                <h1 class="title">Reddit</h1>
-                <a style="text-decoration:none;" href="https://www.reddit.com/user/MRCat3496" target="_blank"><h1 class="link">u/MRCat3496</h1></a>
-            </div>        
         </div>
-        <h1 style="font-size:15px;color: #3d3258;">Made </i> by <a style="color:#ff0000;background: url(https://static.cracked.to/images/bg1.gif)">Tim</a> & <a href="https://leaked.wiki/api" target="_blank" style="text-decoration:none;color:#00ff00;">Leaked.Wiki API</a></h1> <!--with <i style="color:red;" class="fa-solid fa-heart">-->
-            <h1 style="font-size:15px;color: #3d3258;"> <a href="https://leaked.wiki/p/TtXDXddEwY" target="_blank" style="text-decoration:none;color:#dde021;">Faq</a></h1>
-        </div>
+        
 <script>
     $.getJSON('https://api.leaked.wiki/mcuser?username=TimGames21',  
 	    function(data){
@@ -83,8 +59,8 @@
     );
 
     $.getJSON('https://api.leaked.wiki/discorduser?id=718536341918449715',
-	    function(data){
-		    // #avatar doesn't exist | document.getElementById('avatar').src = data.avatar;
+	    function(data){ // #avatar doesn't exist |
+		    document.getElementById('avatar').src = data.avatar;
 		    document.getElementById("dcUsername").innerText = data.username + "#" + data.discriminator
             document.getElementById('avatar').src = data.avatar;
         }

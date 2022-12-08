@@ -15,16 +15,10 @@
     <script src="https://kit.fontawesome.com/dd13dde450.js" crossorigin="anonymous"></script>
     <!--  -->
 </head>
-<header>
-    <a href="mrcat3496.github.io">Home</a>
-    <a href="/store">Store</a>
-    <a href="#">Discord Server</a>
-    <a href="/aboutme/">About me</a>
-</header>
 <body>
     <div class="cat">
         <img id="face" alt="Minecraft Head">
-        <span style="align-items:center;"><h1 class="author">Tim Games</h1></span>
+        <span style="align-items:center;"><h1 class="author">Tim Joey</h1></span>
         <h2 class="skills">Developer / Youtuber / Editor</h2>
         <div style="margin-top:30px;">
             <div class="socials">  
@@ -43,6 +37,10 @@
                 <h1 class="title">Reddit</h1>
                 <a style="text-decoration:none;" href="https://www.reddit.com/user/MRCat3496" target="_blank"><h1 class="link">u/MRCat3496</h1></a>
             </div>        
+            <div class="socials">  
+                <h1 class="title">Store</h1>
+                <a style="text-decoration:none;" href="/store" target="_blank"><h1 class="link">Store And Downloads</h1></a>
+            </div> 
         </div>
         <h1 style="font-size:15px;color: #3d3258;">Made </i> by <a style="color:#ff0000;background: url(https://static.cracked.to/images/bg1.gif)">Tim</a> & <a href="https://leaked.wiki/api" target="_blank" style="text-decoration:none;color:#00ff00;">Leaked.Wiki API</a></h1> <!--with <i style="color:red;" class="fa-solid fa-heart">-->
             <h1 style="font-size:15px;color: #3d3258;"> <a href="https://leaked.wiki/p/TtXDXddEwY" target="_blank" style="text-decoration:none;color:#dde021;">Faq</a></h1>
@@ -58,8 +56,8 @@
     );
 
     $.getJSON('https://api.leaked.wiki/discorduser?id=718536341918449715',
-	    function(data){
-		    // #avatar doesn't exist | document.getElementById('avatar').src = data.avatar;
+	    function(data){ // #avatar doesn't exist |
+		    document.getElementById('avatar').src = data.avatar;
 		    document.getElementById("dcUsername").innerText = data.username + "#" + data.discriminator
             document.getElementById('avatar').src = data.avatar;
         }
