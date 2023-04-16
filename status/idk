@@ -1,15 +1,9 @@
 {
   "success": true,
-  "id": "582148253525475348",
-  "banner_color": null,
-  "username": "Sango",
+  "status": "offline",
+  "id": "codeware",
+  "username": "CodeWare",
   "accent_color": null,
-  "global_name": null,
-  "display_name": null,
   "avatar": "https://cdn.discordapp.com/avatars/582148253525475348/7cabee8d5a2830f18cc43a47dc3c478e",
-  "avatar_decoration": null,
-  "discriminator": "0080",
-  "public_flags": 4194560,
-  "banner": "https://cdn.discordapp.com/banners/582148253525475348/a_caa167aa39947d45038b42228357f9df?size=600",
-  "partial_token": "NTgyMTQ4MjUzNTI1NDc1MzQ4.XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  "discriminator": "t88898"
 }

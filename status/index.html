@@ -31,7 +31,7 @@
             </div>        
             <div class="socials">  
                 <h1 class="title">Discord</h1>
-                <a style="text-decoration:none;" href="https://discord.gg/BvtD4rgZ2V" target="_blank"><h1 id="username" class="link">username#tag</h1></a>
+                <a style="text-decoration:none;" href="https://discord.gg/BvtD4rgZ2V" target="_blank"><h1 id="status" class="link">status</h1></a>
             </div>
             
         </div>
@@ -41,7 +41,7 @@
     $.getJSON('https://mrcat3496.github.io/status/idk',
 	    function(data){ // #avatar doesn't exist | document.getElementById('avatar').src = data.avatar; | document.getElementById('avatar').src = data.avatar;
 		    
-		    document.getElementById("username").innerText = data.username + "#" + data.discriminator
+		    document.getElementById("status").innerText = data.status
             document.getElementById('avatar').src = data.avatar;
         }
     );
