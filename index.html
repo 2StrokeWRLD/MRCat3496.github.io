@@ -46,7 +46,7 @@
         
 <script>
     $.getJSON('https://api.leaked.wiki/discorduser?id=718536341918449715',
-	    function(data){ // #avatar doesn't exist | document.getElementById('avatar').src = data.avatar;
+	    function(data){ // #avatar doesn't exist | document.getElementById('avatar').src = data.avatar; | document.getElementById('avatar').src = data.avatar;
 		    
 		    document.getElementById("username").innerText = data.username + "#" + data.discriminator
             document.getElementById('avatar').src = data.avatar;
